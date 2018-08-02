@@ -239,6 +239,22 @@ class MealTableViewController: UITableViewController {
     
     
     //MARK: Actions
+    
+
+    @IBAction func shareMeal(_ sender: UIButton) {
+        
+        let textToShare = "Hello World"
+        
+        if let myWebsite = NSURL(string: "google.com") {
+            let objectsToShare = [textToShare, myWebsite] as [Any]
+            let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
+            
+            activityVC.popoverPresentationController?.sourceView = sender
+            
+ self.present(activityVC, animated: true, completion: nil)
+        }
+    }
+    
     @IBAction func unwindToMealList(sender: UIStoryboardSegue)
     {
         
@@ -303,33 +319,7 @@ class MealTableViewController: UITableViewController {
     
     
     //MARK: Private Methods
-    //    private func loadSampleMeals() //method to load sample data into the app
-    //    {
-    //        let photo1 = UIImage(named: "meal1")
-    //        let photo2 = UIImage(named: "meal2")
-    //        let photo3 = UIImage(named: "meal3")
-    //
-    //        //This creates 3 meal objects
-    //        guard let meal1 = Meal(name: "Caprese Salad", photo: photo1, rating: 4) else
-    //        {
-    //            fatalError("Unable to instantiate meal1")
-    //        }
-    //
-    //        guard let meal2 = Meal(name: "Chicken and Potatoes", photo: photo2, rating: 5) else
-    //        {
-    //            fatalError("Unable to instantiate meal2")
-    //        }
-    //
-    //        guard let meal3 = Meal(name: "Pasta with Meatballs", photo: photo3, rating: 3) else
-    //        {
-    //            fatalError("Unable to instantiate meal3")
-    //        }
-    //
-    //        //Adds the meal objects to the meals array
-    //        meals += [meal1, meal2, meal3]
-    //
-    //
-    //    }
+
     
     private func saveMeals()
     {

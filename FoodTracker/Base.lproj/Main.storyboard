@@ -52,6 +52,14 @@
                                             </subviews>
                                             <color key="backgroundColor" red="0.87058823529999996" green="0.7843137255" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </stackView>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bB5-NR-NPK">
+                                            <rect key="frame" x="334" y="29" width="25" height="33"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" image="JCZNV"/>
+                                            <connections>
+                                                <action selector="shareMeal:" destination="r2S-oJ-CMY" eventType="touchUpInside" id="8Q7-9f-ss3"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <color key="backgroundColor" red="0.87058823529999996" green="0.7843137255" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
@@ -282,9 +290,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="JCZNV" width="60" height="86"/>
         <image name="defaultPhoto" width="540" height="540"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9FN-4m-99T"/>
+        <segue reference="zYH-6V-7r9"/>
     </inferredMetricsTieBreakers>
 </document>
