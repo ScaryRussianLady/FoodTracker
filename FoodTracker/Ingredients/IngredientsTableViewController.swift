@@ -8,6 +8,7 @@
 
 import UIKit
 import os.log
+import Social
 
 class IngredientsTableViewController: UIViewController, UITextViewDelegate {
     

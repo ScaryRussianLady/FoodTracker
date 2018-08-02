@@ -8,6 +8,7 @@
 
 import UIKit
 import os.log
+import Social
 
 class Meal: NSObject, NSCoding
     

@@ -8,6 +8,7 @@
 
 import UIKit
 import os.log
+import Social
 
 class MealTableViewController: UITableViewController {
     

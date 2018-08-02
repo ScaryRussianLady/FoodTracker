@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Social
 
 //This imports the unified logging system. Lets you send messages to the console, this gives more control over when messages appear and how they are saved
 import os.log
