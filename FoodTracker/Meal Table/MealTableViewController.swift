@@ -243,16 +243,16 @@ class MealTableViewController: UITableViewController {
 
     @IBAction func shareMeal(_ sender: UIButton) {
         
-        let textToShare = "Hello World"
-        
-        if let myWebsite = NSURL(string: "google.com") {
-            let objectsToShare = [textToShare, myWebsite] as [Any]
+//      let textToShare = "Hello World"
+    
+        let textToShare = NSURL(string: "Hello World")
+        let objectsToShare = [textToShare ?? "Hello"] as [Any]
             let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
             
             activityVC.popoverPresentationController?.sourceView = sender
             
  self.present(activityVC, animated: true, completion: nil)
-        }
+        
     }
     
     @IBAction func unwindToMealList(sender: UIStoryboardSegue)
